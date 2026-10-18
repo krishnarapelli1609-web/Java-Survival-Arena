@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Survival Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+    <h1>JAVA SURVIVAL ARENA</h1>
+    <h3 id="status">Ready to enter the arena</h3>
+
+    <!-- Player and enemy health -->
+    <div class="health-container">
+
+        <div class="health-card">
+            <h4>PLAYER</h4>
+            <div class="health-bar">
+                <div id="playerHealth" class="health-fill">100%</div>
+            </div>
+            <p id="playerStats">HP: 100 | Level: 1 | XP: 0 | Coins: 0</p>
+        </div>
+
+        <div class="health-card">
+            <h4>ENEMY</h4>
+            <div class="health-bar">
+                <div id="enemyHealth" class="health-fill">100%</div>
+            </div>
+            <p id="enemyStats">Waiting for enemy...</p>
+        </div>
+
+    </div>
+
+    <!-- Player name and new game -->
+    <div class="menu-buttons">
+        <input
+                type="text"
+                id="playerNameInput"
+                placeholder="Enter your player name"
+                maxlength="50"
+                autocomplete="off"
+        >
+        <button id="newGameBtn">New Game</button>
+        <button id="profileBtn">Player Profile</button>
+        <button id="leaderboardBtn">Leaderboard</button>
+    </div>
+
+    <!-- Battle log -->
+    <div id="battleLog" class="battle-log">
+        Welcome to JAVA SURVIVAL ARENA!
+        <br>
+        Enter your name and click New Game to begin your adventure.
+    </div>
+
+    <!-- Battle actions -->
+    <div class="battle-buttons">
+        <button id="attackBtn" disabled>⚔ Attack</button>
+        <button id="defendBtn" disabled>🛡 Defend</button>
+        <button id="healBtn" disabled>♥ Heal +20</button>
+        <button id="runBtn" disabled>Run</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
