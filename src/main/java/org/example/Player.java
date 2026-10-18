@@ -37,14 +37,10 @@ class Player extends Character {
         checkLevelUp();
     }
 
+
     private void checkLevelUp() {
-
-        int requiredXP = level * 50;
-
-        if (xp >= requiredXP) {
-
+        while (xp >= level * 50) {
             level++;
-
             attackPower += 5;
 
             System.out.println("\n⭐ LEVEL UP!");

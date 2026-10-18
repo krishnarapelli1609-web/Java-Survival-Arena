@@ -1,3 +1,4 @@
+
 package org.example;
 
 class Weapon {
@@ -5,29 +6,27 @@ class Weapon {
     private int damage;
     private int price;
 
-    public Weapon(String var1, int var2, int var3) {
-        this.name = var1;
-        this.damage = var2;
-        this.price = var3;
+    public Weapon(String name, int damage, int price) {
+        this.name = name;
+        this.damage = damage;
+        this.price = price;
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public int getDamage() {
-        return this.damage;
+        return damage;
     }
 
     public int getPrice() {
-        return this.price;
+        return price;
     }
 
     public void displayWeapon() {
-        System.out.println("Weapon : " + this.name);
-        System.out.println("Damage : +" + this.damage);
-        System.out.println("Price  : " + this.price + " coins");
+        System.out.println("Weapon : " + name);
+        System.out.println("Damage : +" + damage);
+        System.out.println("Price  : " + price + " coins");
     }
 }
-
-
