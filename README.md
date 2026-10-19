@@ -1,6 +1,6 @@
 # Java Survival Arena: Rise of the Champion
 
-A browser-based RPG battle game built using Java, Spring Boot, HTML, CSS, JavaScript, and MySQL.
+A browser-based RPG battle game built using Java, JDK, HTML, CSS, JavaScript, and MySQL.
 
 ## Features
 - Battle enemies: Zombie, Goblin, and Dark Lord
@@ -11,10 +11,9 @@ A browser-based RPG battle game built using Java, Spring Boot, HTML, CSS, JavaSc
 
 ## Technologies Used
 - Java
-- Spring Boot REST API
 - HTML, CSS, JavaScript
 - MySQL
-- Maven
+- JDK
 
 ## Run Locally
 1. Install Java and MySQL.
