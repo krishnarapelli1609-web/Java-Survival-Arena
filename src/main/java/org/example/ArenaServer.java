@@ -16,15 +16,18 @@ public class ArenaServer {
     private static final List<String> leaderboard = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
-        HttpServer server = HttpServer.create(
-                new InetSocketAddress(8080), 0);
+        int port = Integer.parseInt(
+        System.getenv().getOrDefault("PORT", "8080"));
+
+HttpServer server = HttpServer.create(
+        new InetSocketAddress(port), 0);
 
         server.createContext("/api/game", ArenaServer::handleGame);
         server.createContext("/", ArenaServer::handleStatic);
 
         server.start();
         System.out.println("Java Survival Arena Server Started!");
-        System.out.println("Open http://localhost:8080");
+        System.out.println("Server running on port " + port);
     }
 
     private static void handleGame(HttpExchange ex) throws IOException {
